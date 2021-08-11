@@ -22,7 +22,7 @@ function CardList() {
     return (
         
         <>
-        <span className={classes.listText}>Danh sách các khóa học </span>
+        {/* <span className={classes.listText}>Danh sách các khóa học </span> */}
         <Grid container  className={classes.gridContainer}>
           
             <Grid item xs={12} sm={3} md ={3}>
