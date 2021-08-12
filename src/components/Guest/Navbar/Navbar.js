@@ -7,7 +7,7 @@ import {
   NavMenu,
   NavBtnLink
 } from './NavbarElements';
-import Logo from '../../images/logo.svg'
+import Logo from '../../../images/logo.svg'
 const Navbar = () => {
   return (
     <>

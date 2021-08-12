@@ -1,8 +1,8 @@
 import React from 'react'
-import CardList from '../components/Guest/CardList'
+import CardList from '../components/Guest/Card/CardList'
 
-import Footer from '../components/Guest/Footer'
-import Navbar from '../components/Guest/Navbar'
+import Footer from '../components/Guest/Footer/Footer'
+import Navbar from '../components/Guest/Navbar/Navbar'
 
 function Home() {
  

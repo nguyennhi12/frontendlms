@@ -1,6 +1,6 @@
 import React from 'react'
 import Sidebar from '../components/Teacher/Sidebar'
-import CardList from '../components/Guest/CardList'
+import CardList from '../components/Guest/Card/CardList'
 import Topbar from '../components/Teacher/Topbar'
 function HomeTeacher() {
     return (

@@ -6,7 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 
-import Logo from '../../images/course.png'
+import Logo from '../../../images/course.png'
 const useStyles = makeStyles({
   root: {
     maxWidth: 350,
