@@ -4,7 +4,8 @@ import CardList from '../components/Guest/Card/CardList'
 import Topbar from '../components/Teacher/Topbar'
 function HomeTeacher() {
     return (
-        <div className="App" style={{width:'100vw', height:'100vh', display:'flex'}}>
+        <div style={{width:'100vw', height:'100vh', display:'flex'}}>
+            
             <Sidebar/>
             <div>
                 <Topbar/>
