@@ -1,16 +1,16 @@
 
 import './Sidebar.css'
 import { SidebarData } from './SidebarData'
-import Avatar from '../../images/logo.svg'
+import Avatar from '../../../images/avatar.png'
 function Sidebar() {
   
     return (
         <div className="Sidebar">
             <div className="info">
                 <div className="info-container">
-                <img src={Avatar} className="info__img"/>
+                 <img src={Avatar} className="info__img"/>
                 </div>
-                <div className="info__name">Teacher</div>
+                <div className="info__name">Student</div>
 
             </div>
 

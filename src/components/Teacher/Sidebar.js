@@ -1,7 +1,7 @@
 
 import './Sidebar.css'
 import { SidebarData } from './SidebarData'
-import Avatar from '../../images/logo.svg'
+import Avatar from '../../images/avatar.png'
 function Sidebar() {
   
     return (
