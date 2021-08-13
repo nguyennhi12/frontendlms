@@ -8,11 +8,13 @@ import QuenMatKhau from './components/Guest/Forgotpassword';
 import Register from './components/Register';
 import InfoCourse from './components/Guest/InfoCourse';
 import ListCourse from './components/Guest/ListCourse';
+import quanlykhoahoc from './components/Student/CourseManager';
+import CourseManager from './components/Student/CourseManager';
 function App() {
   return (
     <Router>
-  
-        <Switch>
+        <CourseManager></CourseManager>
+        {/* <Switch>
           <Route path="/" exact component={Home}/>
           <Route path="/trangchuteacher" exact component={HomeTeacher}/>
           <Route path="/doimatkhau" exact component={DoiMatKhau}/>
@@ -21,10 +23,10 @@ function App() {
           <Route path="/dangky" exact component={Register}/>
           <Route path="/thongtinkhoahoc" exact component={InfoCourse}/>
           <Route path="/danhsachkhoahoc" exact component={ListCourse}/>
+          <Route path="/quanlykhoahocstudent" exact component={quanlykhoahoc}/>
 
 
-
-         </Switch>
+         </Switch> */}
     </Router>
   );
 }
