@@ -8,12 +8,17 @@ import QuenMatKhau from './components/Guest/Forgotpassword';
 import Register from './components/Register';
 import InfoCourse from './components/Guest/InfoCourse';
 import ListCourse from './components/Guest/ListCourse';
+
+import quanlykhoahoc from './components/Student/CourseManager';
+import CourseManager from './components/Student/CourseManager';
+
 import { HomeStudent } from './pages/HomeStudent';
 import Rating from './components/Student/Rating/StudentRating'
+
 function App() {
   return (
     <Router>
-  
+        <CourseManager></CourseManager>
         <Switch>
           <Route path="/" exact component={Home}/>
           <Route path="/trangchuteacher" exact component={HomeTeacher}/>
@@ -23,6 +28,9 @@ function App() {
           <Route path="/dangky" exact component={Register}/>
           <Route path="/thongtinkhoahoc" exact component={InfoCourse}/>
           <Route path="/danhsachkhoahoc" exact component={ListCourse}/>
+
+          <Route path="/quanlykhoahocstudent" exact component={quanlykhoahoc}/>
+
           <Route path="/trangchustudent" exact component={HomeStudent}/>
           <Route path="/rating" exact component={Rating}/>
 
@@ -30,7 +38,7 @@ function App() {
 
 
 
-         </Switch>
+         </Switch> 
     </Router>
   );
 }
