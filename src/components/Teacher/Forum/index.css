@@ -1,0 +1,20 @@
+.wrap-content{
+  
+   
+   display: flex;
+   
+}
+
+.forum{
+ 
+   margin-top: 40px;
+   
+  
+  
+  
+}
+
+.forum h3{
+    font-weight: bold;
+    margin-bottom: 50px;
+}
