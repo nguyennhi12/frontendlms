@@ -1,0 +1,12 @@
+.contentt{
+    padding-bottom: 150px;
+    margin-left: 300px;
+    flex: 1;
+
+}
+
+.button-add{
+    width: 120px;
+    height: 30px;
+    font-size: 14px;
+}
