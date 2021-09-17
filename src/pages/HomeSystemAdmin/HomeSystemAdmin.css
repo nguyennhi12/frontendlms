@@ -1,0 +1,51 @@
+.homesystemadmin{
+    display: flex;
+}
+.contentty{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-left: 100px;
+    padding: 20px;
+   
+}
+
+
+
+
+.wrapper-input-systemadmin{
+    margin:10px auto;
+    width: 850px;
+    height: 70px;
+    padding: 10px 10px 20px 30px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+}
+.search-systemadmin:focus{
+    outline: none;
+ 
+}
+.search-systemadmin{
+    
+    border: none;
+    background-color: #F4F7FC;
+    border-radius: 50px;
+    padding: 3px 3px 3px 30px;
+ 
+    width: 700px;
+    height: 15px;
+    font-size: 15px;
+    opacity: 0.7;
+ 
+  
+}
+
+.search-icon-systemadmin{
+    position: absolute;
+    top: 20px;
+    right: 70px;
+}
+
+
+
