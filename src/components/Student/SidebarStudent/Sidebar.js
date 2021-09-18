@@ -1,0 +1,80 @@
+import React from "react";
+import "./Sidebar.css";
+import { SidebarData } from "./SidebarData";
+import Avatar from "../../../images/avatar.png";
+function Sidebar() {
+  return (
+    <div className="Sidebar-student">
+      <div className="info">
+        <div className="info-container">
+          <img src={localStorage.getItem("avatar")} className="info__img" />
+        </div>
+        <div className="info__name">{localStorage.getItem("username")}</div>
+      </div>
+
+      <ul className="SidebarList">
+        {SidebarData.map((val, key) => {
+          return (
+              <div>
+            {localStorage.getItem("role") !== null &&
+            val.title !== "Hãy đăng nhập" && (
+              <li
+                className="row"
+                id={
+                  window.location.link === val.link || val.link === "/home"
+                    ? "active"
+                    : ""
+                }
+                key={key}
+                onClick={() => {
+                  window.location.pathname = val.link;
+                  if (val.link === "/") {
+                    localStorage.removeItem("accessToken");
+                    localStorage.removeItem("role");
+                    localStorage.removeItem("name");
+                    localStorage.removeItem("username");
+                    localStorage.removeItem("avatar");
+                  }
+                }}
+              >
+                <div id="icon">{val.icon}</div>
+                <div id="title">{val.title}</div>
+              </li>
+            )
+        }
+
+            {localStorage.getItem("role") ===null &&
+            val.title === "Hãy đăng nhập" && (
+              <li
+                className="row"
+                id={
+                  window.location.link === val.link || val.link === "/home"
+                    ? "active"
+                    : ""
+                }
+                key={key}
+                onClick={() => {
+                  window.location.pathname = val.link;
+                  if (val.link === "/") {
+                    localStorage.removeItem("accessToken");
+                    localStorage.removeItem("role");
+                    localStorage.removeItem("name");
+                    localStorage.removeItem("username");
+                    localStorage.removeItem("avatar");
+                  }
+                }}
+              >
+                <div id="icon">{val.icon}</div>
+                <div id="title">{val.title}</div>
+              </li>
+            )
+        }
+            </div>
+          );
+        })}
+      </ul>
+    </div>
+  );
+}
+
+export default Sidebar;
